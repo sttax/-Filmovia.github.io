@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo ao Filmovia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #121212; /* Fundo escuro */
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(18, 18, 18, 0.9); /* Levemente transparente */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #e50914; /* Vermelho vibrante */
+        }
+
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 30px;
+            color: #ccc; /* Texto cinza claro */
+        }
+
+        a {
+            display: inline-block;
+            padding: 15px 30px;
+            color: #fff;
+            background-color: #e50914;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.125rem;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #f40612;
+            transform: translateY(-3px); /* Leve elevação ao passar o mouse */
+        }
+
+        /* Responsividade */
+        @media (max-width: 767px) {
+            h1 { font-size: 2rem; }
+            p { font-size: 1rem; }
+            a { padding: 12px 24px; font-size: 1rem; }
+        }
+
+        @media (min-width: 768px) and (max-width: 1024px) {
+            h1 { font-size: 2.25rem; }
+            p { font-size: 1.125rem; }
+            a { padding: 14px 28px; font-size: 1.125rem; }
+        }
+
+        @media (min-width: 1025px) {
+            h1 { font-size: 3rem; }
+            p { font-size: 1.25rem; }
+            a { padding: 15px 30px; font-size: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Filmovia</h1>
+        <p>Descubra o futuro do entretenimento.</p>
+        <a href="dashboard.html">Entrar</a>
+    </div>
+</body>
+</html>

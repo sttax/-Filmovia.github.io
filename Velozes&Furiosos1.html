@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistir Filme - Filmovia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Filmovia</h1>
+    </header>
+    <main>
+        <section class="player-container">
+            <h2>Velozes & Furiosos 1</h2>
+            <!-- Incorporação do vídeo do Google Drive -->
+            <div style="padding:50% 0 0 0;position:relative;">
+                <iframe src="https://drive.google.com/file/d/1CBIYaFHtOxN73JGJahZD5hTcQ524ITLe/preview" frameborder="0" allow="autoplay; fullscreen" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="cidade-de-deus"></iframe>
+            </div>
+            <div class="button-container">
+                <button class="back-button"><a href="home.html">Voltar ao Catálogo</a></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Filmovia. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function playVideo() {
+            const video = document.querySelector('iframe');
+            video.src += "&autoplay=1";
+        }
+    </script>
+</body>
+</html>
